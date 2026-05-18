@@ -1,0 +1,88 @@
+{
+  "id": "notes-pl",
+  "title": "Lecture Notes — Complete Course (Parts I & II)",
+  "source_file": "course/eng/notes_pl.pdf",
+  "week_number": null,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2024-2025",
+  "authors": [
+    "Ștefan Ciobâcă",
+    "Andrei Arusoaie",
+    "Rodica Condurache",
+    "Cristian Masalagiu"
+  ],
+  "parsing_status": "ok",
+  "main_topics": [
+    "Part I — Propositional Logic",
+    "Part II — First-Order Logic"
+  ],
+  "subtopics": [
+    "Syntax of Propositional Logic",
+    "Semantics of Propositional Logic",
+    "Natural Deduction in Propositional Logic",
+    "Normal Forms in Propositional Logic",
+    "Resolution in Propositional Logic",
+    "Tseitin's Algorithm",
+    "Syntax of First-Order Logic",
+    "Semantics of First-Order Logic",
+    "Natural Deduction in First-Order Logic",
+    "Prenex Normal Form",
+    "Skolem Normal Form",
+    "Resolution for First-Order Logic"
+  ],
+  "definitions": [],
+  "key_concepts": [
+    "propositional logic",
+    "first-order logic",
+    "syntax",
+    "semantics",
+    "natural deduction",
+    "normal forms",
+    "resolution",
+    "Tseitin",
+    "CNF",
+    "PNF",
+    "Skolemisation",
+    "unification"
+  ],
+  "algorithms": [
+    "CNF conversion",
+    "Tseitin's transformation",
+    "Resolution refutation (propositional)",
+    "PNF conversion",
+    "Skolemisation",
+    "Robinson's unification algorithm",
+    "FOL resolution refutation"
+  ],
+  "formulas": [],
+  "examples": [],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [
+    "Understand propositional and first-order logic syntax and semantics.",
+    "Apply proof systems: natural deduction and resolution.",
+    "Convert formulae to normal forms: CNF, PNF, SNF, CSNF.",
+    "Solve satisfiability problems using SAT-solving techniques."
+  ],
+  "lesson_ids": [
+    "lesson-week-01-informal-logic",
+    "lesson-week-02-syntax-propositional-logic",
+    "lesson-week-03-semantics-propositional-logic",
+    "lesson-week-04-natural-deduction",
+    "lesson-week-05-normal-forms",
+    "lesson-week-06-resolution",
+    "lesson-week-07-tseitins-algorithm",
+    "lesson-week-09-syntax-first-order-logic",
+    "lesson-week-10-semantics-first-order-logic",
+    "lesson-week-11-natural-deduction-fol",
+    "lesson-week-12-normal-forms-fol",
+    "lesson-week-13-normal-forms-fol-part-2",
+    "lesson-week-14-resolution-fol"
+  ],
+  "unit_ids": [
+    "unit-propositional-logic",
+    "unit-first-order-logic"
+  ]
+}

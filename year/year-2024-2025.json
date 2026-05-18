@@ -1,0 +1,28 @@
+{
+  "id": "year-2024-2025",
+  "academic_year": "2024-2025",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "courses": [
+    {
+      "course_id": "cs1103-logics",
+      "course_name": "Logic for Computer Science",
+      "unit_ids": [
+        "unit-propositional-logic",
+        "unit-first-order-logic"
+      ],
+      "comprehensive_notes_ids": [
+        "notes-pl",
+        "lecture-notes-pl1"
+      ],
+      "authors": [
+        "Ștefan Ciobâcă",
+        "Andrei Arusoaie",
+        "Rodica Condurache",
+        "Cristian Masalagiu"
+      ]
+    }
+  ],
+  "total_lessons": 13,
+  "total_units": 2
+}

@@ -1,0 +1,98 @@
+{
+  "id": "notes13",
+  "title": "Normal Forms for First-Order Logic — Part II",
+  "source_file": "course/eng/notes13.pdf",
+  "week_number": 13,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Closed Formulae",
+    "Existential and Universal Closure",
+    "Equisatisfiability in FOL",
+    "Conjunctive Normal Form for FOL",
+    "Skolem Normal Form",
+    "Clausal Skolem Normal Form (CSNF)",
+    "Ground Resolution in FOL"
+  ],
+  "subtopics": [
+    "Closed formula (sentence): free(φ) = ∅",
+    "Opened formula: has free variables",
+    "Existential closure of a formula",
+    "Universal closure of a formula",
+    "Equisatisfiability: both satisfiable or both unsatisfiable",
+    "Conjunctive normal form for FOL (quantifier-free matrix in CNF)",
+    "Skolemisation: eliminating existential quantifiers by introducing Skolem functions",
+    "Skolem normal form",
+    "Clausal Skolem normal form",
+    "Ground resolution applied to ground instances",
+    "Herbrand universe and Herbrand models"
+  ],
+  "definitions": [
+    {
+      "term": "closed formula",
+      "definition": "A formula φ ∈ FOL with free(φ) = ∅; also called a sentence."
+    },
+    {
+      "term": "existential closure",
+      "definition": "The formula ∃x₁.∃x₂.…∃xₙ.φ where {x₁,…,xₙ} = free(φ)."
+    },
+    {
+      "term": "universal closure",
+      "definition": "The formula ∀x₁.∀x₂.…∀xₙ.φ where {x₁,…,xₙ} = free(φ)."
+    },
+    {
+      "term": "equisatisfiable formulae",
+      "definition": "φ₁ and φ₂ are equisatisfiable if they are both satisfiable or both unsatisfiable."
+    },
+    {
+      "term": "Skolem normal form",
+      "definition": "An equisatisfiable formula obtained from a PNF formula by replacing each existentially quantified variable with a Skolem function applied to the universally quantified variables in scope."
+    },
+    {
+      "term": "clausal Skolem normal form (CSNF)",
+      "definition": "A formula in Skolem normal form whose matrix is in CNF."
+    }
+  ],
+  "key_concepts": [
+    "sentence",
+    "closed formula",
+    "existential closure",
+    "universal closure",
+    "equisatisfiability",
+    "CNF for FOL",
+    "Skolemisation",
+    "Skolem function",
+    "Skolem normal form",
+    "clausal Skolem normal form",
+    "ground resolution",
+    "Herbrand universe"
+  ],
+  "algorithms": [
+    "Skolemisation: convert PNF formula to Skolem normal form",
+    "Ground resolution for FOL"
+  ],
+  "formulas": [
+    "Any formula is equisatisfiable with its existential closure.",
+    "Skolemisation: ∀x.∃y.P(x,y) → ∀x.P(x, f(x)) where f is a fresh Skolem function"
+  ],
+  "examples": [
+    "∀x.P(x,x) ∧ ∃y.P(y,x) is a closed formula",
+    "Skolemising ∀x.∃y.(x + y = 0) over integers"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes12"
+  ],
+  "learning_objectives": [
+    "Distinguish closed and open formulae.",
+    "Compute existential and universal closures.",
+    "Apply Skolemisation to eliminate existential quantifiers.",
+    "Convert a FOL formula to clausal Skolem normal form.",
+    "Apply ground resolution to check satisfiability."
+  ],
+  "lesson_id": "lesson-week-13-normal-forms-fol-part-2",
+  "unit_id": "unit-first-order-logic"
+}

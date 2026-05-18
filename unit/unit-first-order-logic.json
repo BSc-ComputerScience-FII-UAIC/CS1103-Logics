@@ -1,0 +1,53 @@
+{
+  "id": "unit-first-order-logic",
+  "title": "First-Order Logic",
+  "course_name": "Logic for Computer Science",
+  "unit_number": 2,
+  "summary": "This unit extends propositional logic to first-order logic: predicates, quantifiers, signatures, structures, terms, FOL semantics, natural deduction with substitution, normal forms (PNF, SNF, CSNF), and resolution with unification.",
+  "lesson_ids": [
+    "lesson-week-09-syntax-first-order-logic",
+    "lesson-week-10-semantics-first-order-logic",
+    "lesson-week-11-natural-deduction-fol",
+    "lesson-week-12-normal-forms-fol",
+    "lesson-week-13-normal-forms-fol-part-2",
+    "lesson-week-14-resolution-fol"
+  ],
+  "course_source_ids": [
+    "notes9",
+    "notes10",
+    "notes11",
+    "notes12",
+    "notes13",
+    "notes14",
+    "lecture-notes-pl1",
+    "notes-pl"
+  ],
+  "key_concepts": [
+    "predicate",
+    "quantifier",
+    "signature",
+    "structure",
+    "term",
+    "free variable",
+    "bound variable",
+    "S-assignment",
+    "validity in FOL",
+    "substitution",
+    "prenex normal form",
+    "Skolemisation",
+    "CSNF",
+    "unification",
+    "MGU",
+    "FOL resolution"
+  ],
+  "prerequisite_unit_ids": [
+    "unit-propositional-logic"
+  ],
+  "next_unit_id": null,
+  "learning_objectives": [
+    "Understand FOL syntax and semantics.",
+    "Apply natural deduction rules for quantifiers.",
+    "Convert FOL formulae to PNF, SNF, and CSNF.",
+    "Apply FOL resolution with unification."
+  ]
+}

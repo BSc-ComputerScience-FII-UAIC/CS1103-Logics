@@ -1,0 +1,71 @@
+{
+  "id": "notes7",
+  "title": "Tseitin's Algorithm",
+  "source_file": "course/eng/notes7.pdf",
+  "week_number": 7,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Exponential Blowup of Naive CNF Conversion",
+    "Equisatisfiability",
+    "Tseitin's Transformation",
+    "Polynomial CNF Encoding"
+  ],
+  "subtopics": [
+    "Exponential growth of naive CNF conversion",
+    "Definition of equisatisfiability",
+    "Tseitin transformation: labelling AST nodes with fresh variables",
+    "Encoding each AST node as a short CNF clause",
+    "Linear size bound of Tseitin encoding",
+    "Correctness: ϕ and ϕ' are equisatisfiable",
+    "Any model of ϕ' extends to a model of ϕ"
+  ],
+  "definitions": [
+    {
+      "term": "equisatisfiability",
+      "definition": "Two formulae are equisatisfiable if they are both satisfiable or both unsatisfiable."
+    },
+    {
+      "term": "Tseitin's transformation",
+      "definition": "An algorithm that converts a formula ϕ to an equisatisfiable formula ϕ' in CNF with size linear in the size of ϕ, by introducing a fresh variable for each AST node."
+    }
+  ],
+  "key_concepts": [
+    "equisatisfiability",
+    "Tseitin transformation",
+    "polynomial CNF encoding",
+    "fresh variable",
+    "SAT solver",
+    "exponential blowup",
+    "AST labelling"
+  ],
+  "algorithms": [
+    "Tseitin's transformation: label each AST node with a fresh propositional variable, then encode the semantics of each node as a set of short clauses"
+  ],
+  "formulas": [
+    "size(ϕ') ≤ 16 × size(ϕ)",
+    "Encoding of ∧-node v with children v₁, v₂: (v ∨ ¬v₁ ∨ ¬v₂) ∧ (¬v ∨ v₁) ∧ (¬v ∨ v₂)",
+    "Encoding of ∨-node v: (¬v ∨ v₁ ∨ v₂) ∧ (v ∨ ¬v₁) ∧ (v ∨ ¬v₂)",
+    "Encoding of ¬-node v: (¬v ∨ ¬v₁) ∧ (v ∨ v₁)"
+  ],
+  "examples": [
+    "Tseitin encoding of ¬(p ∧ (q ∨ ¬r))",
+    "Exponential blowup of (p₁∧q₁) ∨ … ∨ (pₙ∧qₙ)"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes5",
+    "notes6"
+  ],
+  "learning_objectives": [
+    "Explain the exponential blowup of naive CNF conversion.",
+    "Define equisatisfiability and distinguish it from equivalence.",
+    "Apply Tseitin's transformation to convert a formula to CNF in polynomial size.",
+    "Use Tseitin encoding as input to a SAT solver."
+  ],
+  "lesson_id": "lesson-week-07-tseitins-algorithm",
+  "unit_id": "unit-propositional-logic"
+}

@@ -1,0 +1,97 @@
+{
+  "id": "notes11",
+  "title": "Natural Deduction in First-Order Logic",
+  "source_file": "course/eng/notes11.pdf",
+  "week_number": 11,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Substitutions",
+    "Extension of Substitution to Terms",
+    "Safe Substitution",
+    "Natural Deduction Rules for FOL",
+    "Universal Quantifier Rules",
+    "Existential Quantifier Rules"
+  ],
+  "subtopics": [
+    "Substitution σ: X → T and its domain",
+    "Extension σ̂: T → T of a substitution to terms",
+    "Application of substitution to formulae σ̂(φ)",
+    "Capture-avoiding substitution",
+    "Safe substitution condition",
+    "∀I (universal introduction) rule",
+    "∀E (universal elimination) rule",
+    "∃I (existential introduction) rule",
+    "∃E (existential elimination) rule",
+    "Soundness and completeness of FOL natural deduction"
+  ],
+  "definitions": [
+    {
+      "term": "substitution",
+      "definition": "A function σ: X → T such that σ(x) ≠ x for only finitely many variables x."
+    },
+    {
+      "term": "domain of a substitution",
+      "definition": "dom(σ) = {x ∈ X | σ(x) ≠ x}, the finite set of variables that are actually replaced."
+    },
+    {
+      "term": "extension of substitution to terms",
+      "definition": "σ̂: T → T defined inductively: σ̂(x) = σ(x), σ̂(c) = c, σ̂(f(t₁,…,tₙ)) = f(σ̂(t₁),…,σ̂(tₙ))."
+    },
+    {
+      "term": "safe substitution",
+      "definition": "σ is safe for variable x in formula φ if no free occurrence of x in φ becomes bound after applying σ."
+    },
+    {
+      "term": "∀E rule",
+      "definition": "From ∀x.φ, derive φ[x ↦ t] for any term t, provided the substitution is safe."
+    },
+    {
+      "term": "∀I rule",
+      "definition": "From φ (where x does not appear free in any assumption), derive ∀x.φ."
+    }
+  ],
+  "key_concepts": [
+    "substitution",
+    "term substitution",
+    "capture-avoiding substitution",
+    "∀I rule",
+    "∀E rule",
+    "∃I rule",
+    "∃E rule",
+    "natural deduction in FOL",
+    "soundness",
+    "completeness"
+  ],
+  "algorithms": [
+    "Application of substitution σ to a formula φ",
+    "FOL natural deduction proof construction"
+  ],
+  "formulas": [
+    "φ[x ↦ t] denotes applying substitution {x ↦ t} to φ",
+    "∀E: ∀x.φ ⊢ φ[x ↦ t]",
+    "∀I: if x ∉ free(Γ), then Γ ⊢ φ implies Γ ⊢ ∀x.φ",
+    "∃I: φ[x ↦ t] ⊢ ∃x.φ",
+    "∃E: from ∃x.φ and φ ⊢ ψ (x ∉ free(ψ)), derive ψ"
+  ],
+  "examples": [
+    "Proof of ∀x.P(x) ⊢ P(a) using ∀E",
+    "Proof of P(a) ⊢ ∃x.P(x) using ∃I"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes10",
+    "notes4"
+  ],
+  "learning_objectives": [
+    "Define substitutions and compute their application to terms and formulae.",
+    "Identify and avoid variable capture.",
+    "Apply the ∀I, ∀E, ∃I, ∃E rules of natural deduction for FOL.",
+    "Construct natural deduction proofs for FOL sequents."
+  ],
+  "lesson_id": "lesson-week-11-natural-deduction-fol",
+  "unit_id": "unit-first-order-logic"
+}

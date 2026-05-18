@@ -1,0 +1,137 @@
+{
+  "id": "lecture-notes-pl1",
+  "title": "Lecture Notes — Part II: First-Order Logic",
+  "source_file": "course/eng/lecture_notes_pl1.pdf",
+  "week_number": null,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2024-2025",
+  "authors": [
+    "Ștefan Ciobâcă",
+    "Andrei Arusoaie",
+    "Rodica Condurache",
+    "Cristian Masalagiu"
+  ],
+  "parsing_status": "ok",
+  "main_topics": [
+    "Motivation and Introduction to FOL",
+    "Structures and Signatures",
+    "Syntax of First-Order Logic",
+    "Semantics of First-Order Formulae",
+    "Natural Deduction in FOL",
+    "Prenex Normal Form",
+    "Skolem Normal Form",
+    "Clausal Skolem Normal Form",
+    "Resolution for FOL",
+    "Unification"
+  ],
+  "subtopics": [
+    "Signature definition and examples",
+    "Mathematical structures",
+    "Alphabet of FOL",
+    "Terms and atomic formulae",
+    "FOL formula inductive definition",
+    "Free and bound variables",
+    "Scope of quantifiers",
+    "S-assignments and truth values",
+    "Satisfiability and validity in FOL",
+    "Substitutions and safe substitution",
+    "∀I, ∀E, ∃I, ∃E rules",
+    "PNF conversion",
+    "Skolemisation",
+    "CSNF",
+    "Unification algorithm",
+    "FOL resolution rule"
+  ],
+  "definitions": [
+    {
+      "term": "signature",
+      "definition": "See notes9."
+    },
+    {
+      "term": "structure",
+      "definition": "See notes9."
+    },
+    {
+      "term": "term",
+      "definition": "See notes9."
+    },
+    {
+      "term": "first-order formula",
+      "definition": "See notes9."
+    },
+    {
+      "term": "free variable",
+      "definition": "See notes9."
+    },
+    {
+      "term": "prenex normal form",
+      "definition": "See notes12."
+    },
+    {
+      "term": "Skolem normal form",
+      "definition": "See notes13."
+    },
+    {
+      "term": "unifier",
+      "definition": "See notes14."
+    },
+    {
+      "term": "most general unifier",
+      "definition": "See notes14."
+    }
+  ],
+  "key_concepts": [
+    "first-order logic",
+    "quantifier",
+    "signature",
+    "structure",
+    "term",
+    "free variable",
+    "bound variable",
+    "satisfiability",
+    "validity",
+    "natural deduction in FOL",
+    "substitution",
+    "PNF",
+    "Skolemisation",
+    "CSNF",
+    "unification",
+    "MGU",
+    "resolution"
+  ],
+  "algorithms": [
+    "PNF conversion",
+    "Skolemisation",
+    "Robinson's unification algorithm",
+    "FOL resolution refutation"
+  ],
+  "formulas": [],
+  "examples": [],
+  "exercises": [],
+  "prerequisites": [
+    "notes1",
+    "notes2",
+    "notes3",
+    "notes4",
+    "notes5",
+    "notes6",
+    "notes7"
+  ],
+  "learning_objectives": [
+    "Master first-order logic syntax and semantics.",
+    "Apply natural deduction in FOL.",
+    "Convert FOL formulae to normal forms.",
+    "Apply FOL resolution with unification."
+  ],
+  "lesson_ids": [
+    "lesson-week-09-syntax-first-order-logic",
+    "lesson-week-10-semantics-first-order-logic",
+    "lesson-week-11-natural-deduction-fol",
+    "lesson-week-12-normal-forms-fol",
+    "lesson-week-13-normal-forms-fol-part-2",
+    "lesson-week-14-resolution-fol"
+  ],
+  "unit_id": "unit-first-order-logic"
+}

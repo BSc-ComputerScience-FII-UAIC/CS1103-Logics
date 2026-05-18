@@ -1,0 +1,87 @@
+{
+  "id": "notes4",
+  "title": "Natural Deduction in Propositional Logic",
+  "source_file": "course/eng/notes4.pdf",
+  "week_number": 4,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Natural Deduction",
+    "Sequents",
+    "Deduction Rules",
+    "Formal Proofs",
+    "Soundness and Completeness"
+  ],
+  "subtopics": [
+    "Proof system concept",
+    "Sequent notation φ₁, …, φₙ ⊢ φ",
+    "Introduction and elimination rules for ∧, ∨, ¬, →, ↔",
+    "Axiom (assumption) rule",
+    "Ex falso quodlibet (⊥ elimination)",
+    "Proof by contradiction",
+    "Soundness: if ⊢ then ⊨",
+    "Completeness: if ⊨ then ⊢"
+  ],
+  "definitions": [
+    {
+      "term": "sequent",
+      "definition": "An expression φ₁, …, φₙ ⊢ φ meaning that φ can be formally derived from the premises φ₁, …, φₙ."
+    },
+    {
+      "term": "natural deduction",
+      "definition": "A proof system with introduction and elimination rules for each connective, designed to mirror human reasoning."
+    },
+    {
+      "term": "soundness",
+      "definition": "A proof system is sound if every provable sequent is also semantically valid (⊢ implies ⊨)."
+    },
+    {
+      "term": "completeness",
+      "definition": "A proof system is complete if every semantically valid sequent is provable (⊨ implies ⊢)."
+    }
+  ],
+  "key_concepts": [
+    "sequent",
+    "natural deduction",
+    "introduction rule",
+    "elimination rule",
+    "assumption",
+    "proof tree",
+    "soundness",
+    "completeness",
+    "ex falso quodlibet",
+    "proof by contradiction"
+  ],
+  "algorithms": [
+    "Natural deduction proof search"
+  ],
+  "formulas": [
+    "∧I: from φ and ψ derive φ ∧ ψ",
+    "∧E₁: from φ ∧ ψ derive φ",
+    "∧E₂: from φ ∧ ψ derive ψ",
+    "→I: discharge assumption φ to derive φ → ψ from ψ",
+    "→E (modus ponens): from φ → ψ and φ derive ψ",
+    "¬I: from a proof of ⊥ under assumption φ, derive ¬φ",
+    "¬E: from φ and ¬φ derive ⊥",
+    "⊥E (ex falso): from ⊥ derive any φ"
+  ],
+  "examples": [
+    "Proof of p ∧ q ⊢ q ∧ p using ∧I and ∧E rules",
+    "Proof of p → q, p ⊢ q using →E"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes3"
+  ],
+  "learning_objectives": [
+    "Understand the concept of a formal proof system.",
+    "Apply natural deduction rules for propositional connectives.",
+    "Construct proof trees for given sequents.",
+    "Understand the notions of soundness and completeness."
+  ],
+  "lesson_id": "lesson-week-04-natural-deduction",
+  "unit_id": "unit-propositional-logic"
+}

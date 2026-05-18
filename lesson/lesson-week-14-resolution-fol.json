@@ -1,0 +1,35 @@
+{
+  "id": "lesson-week-14-resolution-fol",
+  "title": "Resolution for First-Order Logic",
+  "week_number": 14,
+  "unit_id": "unit-first-order-logic",
+  "course_source_id": "notes14",
+  "duration_pages": 7,
+  "summary": "Introduces unification (Robinson's algorithm, MGU) and the FOL resolution rule that uses the MGU to derive resolvents.",
+  "topics": [
+    "Unification",
+    "Most general unifier",
+    "Composition of substitutions",
+    "FOL resolution rule",
+    "FOL resolution refutation"
+  ],
+  "learning_outcomes": [
+    "Define unifiers and compute the MGU.",
+    "Apply Robinson's unification algorithm.",
+    "Apply FOL resolution with unification.",
+    "Construct a FOL resolution refutation."
+  ],
+  "key_terms": [
+    "unifier",
+    "unifiability",
+    "MGU",
+    "occur check",
+    "Robinson algorithm",
+    "FOL resolution"
+  ],
+  "prerequisite_lesson_ids": [
+    "lesson-week-13-normal-forms-fol-part-2",
+    "lesson-week-11-natural-deduction-fol"
+  ],
+  "next_lesson_id": null
+}

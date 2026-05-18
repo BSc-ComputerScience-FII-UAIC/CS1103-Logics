@@ -1,0 +1,91 @@
+{
+  "id": "notes14",
+  "title": "Resolution for First-Order Logic",
+  "source_file": "course/eng/notes14.pdf",
+  "week_number": 14,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Unification",
+    "Most General Unifier (MGU)",
+    "Composition of Substitutions",
+    "Resolution Rule for FOL",
+    "FOL Resolution Refutation"
+  ],
+  "subtopics": [
+    "Unifier of two terms",
+    "Unifiable terms",
+    "Occur check",
+    "Composition of two substitutions",
+    "More general substitution (partial order on substitutions)",
+    "Most general unifier (MGU)",
+    "Unification algorithm (Robinson, 1965)",
+    "FOL resolution rule (using MGU)",
+    "FOL resolution refutation algorithm",
+    "Completeness of FOL resolution"
+  ],
+  "definitions": [
+    {
+      "term": "unifier",
+      "definition": "A substitution σ is a unifier for terms t₁ and t₂ if σ̂(t₁) = σ̂(t₂)."
+    },
+    {
+      "term": "unifiable terms",
+      "definition": "Two terms are unifiable if they have at least one unifier."
+    },
+    {
+      "term": "most general unifier (MGU)",
+      "definition": "A unifier σ₁ is more general than σ₂ if σ₂ = σ₁ ∘ τ for some substitution τ. The MGU is the most general among all unifiers."
+    },
+    {
+      "term": "composition of substitutions",
+      "definition": "The substitution σ₂ ∘ σ₁ defined by (σ₂ ∘ σ₁)(x) = σ̂₂(σ₁(x))."
+    },
+    {
+      "term": "FOL resolution rule",
+      "definition": "From clauses C₁ and C₂ (with renamed variables), if L ∈ C₁ and ¬L' ∈ C₂ are unifiable with MGU σ, derive the resolvent σ((C₁ \\ {L}) ∪ (C₂ \\ {¬L'}))."
+    }
+  ],
+  "key_concepts": [
+    "unification",
+    "unifier",
+    "most general unifier",
+    "MGU",
+    "occur check",
+    "Robinson's unification algorithm",
+    "FOL resolution",
+    "refutation completeness of FOL resolution"
+  ],
+  "algorithms": [
+    "Robinson's unification algorithm (1965)",
+    "FOL resolution refutation"
+  ],
+  "formulas": [
+    "(σ₂ ∘ σ₁)(x) = σ̂₂(σ₁(x))",
+    "FOL Res(C₁, C₂) = σ((C₁ \\ {L}) ∪ (C₂ \\ {¬L'})) where σ = MGU(L, L')"
+  ],
+  "examples": [
+    "Unifying f(x, h(y)) and f(h(z), z') with MGU {x ↦ h(z), z' ↦ h(y)}",
+    "Showing t₁ = x and t₂ = h(x) are not unifiable (occur check)"
+  ],
+  "exercises": [
+    "Verify that σ₂ = σ₁ ∘ σ for given substitutions.",
+    "Apply FOL resolution to a CSNF formula to check satisfiability."
+  ],
+  "prerequisites": [
+    "notes13",
+    "notes11"
+  ],
+  "learning_objectives": [
+    "Define unification and compute unifiers.",
+    "Understand and apply Robinson's unification algorithm.",
+    "Define the most general unifier.",
+    "Apply FOL resolution using the MGU to derive resolvents.",
+    "Construct FOL resolution refutations."
+  ],
+  "lesson_id": "lesson-week-14-resolution-fol",
+  "unit_id": "unit-first-order-logic"
+}

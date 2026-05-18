@@ -1,0 +1,90 @@
+{
+  "id": "notes5",
+  "title": "Normal Forms in Propositional Logic",
+  "source_file": "course/eng/notes5.pdf",
+  "week_number": 5,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Operator Precedence",
+    "Replacement Theorem",
+    "Literals",
+    "Clauses",
+    "Conjunctive Normal Form (CNF)",
+    "Disjunctive Normal Form (DNF)",
+    "CNF Conversion Algorithm"
+  ],
+  "subtopics": [
+    "Precedence order: ⊥, ¬, ∧, ∨, →, ↔",
+    "Left-associativity of ∧ and ∨",
+    "Replacement theorem (congruence of ≡)",
+    "Definition of a literal",
+    "Definition of a clause",
+    "Empty clause □",
+    "Definition of CNF",
+    "Definition of DNF",
+    "Standard equivalences used in CNF conversion",
+    "Algorithm for converting a formula to CNF"
+  ],
+  "definitions": [
+    {
+      "term": "literal",
+      "definition": "A propositional variable a or its negation ¬a."
+    },
+    {
+      "term": "clause",
+      "definition": "A disjunction of literals φ₁ ∨ … ∨ φₙ. The empty clause □ (n=0) is unsatisfiable."
+    },
+    {
+      "term": "conjunctive normal form (CNF)",
+      "definition": "A formula that is a conjunction of clauses (conjunction of disjunctions of literals)."
+    },
+    {
+      "term": "disjunctive normal form (DNF)",
+      "definition": "A formula that is a disjunction of conjunctions of literals."
+    },
+    {
+      "term": "replacement theorem",
+      "definition": "If φ ≡ φ', replacing one occurrence of φ in a formula φ₁ by φ' yields an equivalent formula φ₂."
+    }
+  ],
+  "key_concepts": [
+    "operator precedence",
+    "literal",
+    "clause",
+    "empty clause",
+    "CNF",
+    "DNF",
+    "replacement theorem",
+    "logical equivalence",
+    "normal form conversion"
+  ],
+  "algorithms": [
+    "CNF conversion: push negations inward (De Morgan), distribute ∨ over ∧"
+  ],
+  "formulas": [
+    "¬(φ ∧ ψ) ≡ ¬φ ∨ ¬ψ  (De Morgan)",
+    "¬(φ ∨ ψ) ≡ ¬φ ∧ ¬ψ  (De Morgan)",
+    "φ ∨ (ψ ∧ χ) ≡ (φ ∨ ψ) ∧ (φ ∨ χ)  (distributivity)"
+  ],
+  "examples": [
+    "¬¬p ∨ ⊥ ∧ p → ¬p ∧ q ↔ q parsed using precedence rules",
+    "(¬p ∨ q) ∧ (r ∨ ¬p ∨ r') ∧ (¬p ∨ ¬r) is in CNF"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes3",
+    "notes4"
+  ],
+  "learning_objectives": [
+    "Apply operator precedence and left-associativity rules.",
+    "Define literals, clauses, CNF, and DNF.",
+    "Apply the replacement theorem.",
+    "Convert a propositional formula to CNF."
+  ],
+  "lesson_id": "lesson-week-05-normal-forms",
+  "unit_id": "unit-propositional-logic"
+}

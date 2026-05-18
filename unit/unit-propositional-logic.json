@@ -1,0 +1,49 @@
+{
+  "id": "unit-propositional-logic",
+  "title": "Propositional Logic",
+  "course_name": "Logic for Computer Science",
+  "unit_number": 1,
+  "summary": "This unit covers the full lifecycle of propositional logic: informal foundations, formal syntax, semantics (truth assignments, satisfiability, validity), natural deduction, normal forms (CNF, DNF), resolution, and Tseitin's polynomial CNF encoding.",
+  "lesson_ids": [
+    "lesson-week-01-informal-logic",
+    "lesson-week-02-syntax-propositional-logic",
+    "lesson-week-03-semantics-propositional-logic",
+    "lesson-week-04-natural-deduction",
+    "lesson-week-05-normal-forms",
+    "lesson-week-06-resolution",
+    "lesson-week-07-tseitins-algorithm"
+  ],
+  "course_source_ids": [
+    "notes1",
+    "notes2",
+    "notes3",
+    "notes4",
+    "notes5",
+    "notes6",
+    "notes7",
+    "notes-pl"
+  ],
+  "key_concepts": [
+    "proposition",
+    "propositional variable",
+    "connective",
+    "formula",
+    "truth assignment",
+    "satisfiability",
+    "validity",
+    "equivalence",
+    "natural deduction",
+    "CNF",
+    "DNF",
+    "resolution",
+    "Tseitin transformation"
+  ],
+  "prerequisite_unit_ids": [],
+  "next_unit_id": "unit-first-order-logic",
+  "learning_objectives": [
+    "Master propositional logic syntax and semantics.",
+    "Apply natural deduction proof rules.",
+    "Convert formulae to CNF and apply resolution.",
+    "Use Tseitin's algorithm for efficient SAT encoding."
+  ]
+}

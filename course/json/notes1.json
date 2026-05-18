@@ -1,0 +1,89 @@
+{
+  "id": "notes1",
+  "title": "Introduction to Informal Logic",
+  "source_file": "course/eng/notes1.pdf",
+  "week_number": 1,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Propositions",
+    "Informal Propositional Logic",
+    "Logical Connectives",
+    "Conditional Statements",
+    "Biconditional Statements",
+    "Arguments and Inference"
+  ],
+  "subtopics": [
+    "Definition of a proposition",
+    "Examples and non-examples of propositions",
+    "Conjunction (and)",
+    "Disjunction (or)",
+    "Negation (not)",
+    "Implication (if … then)",
+    "Biconditional (if and only if)",
+    "Tautologies",
+    "Valid arguments",
+    "Modus ponens",
+    "Modus tollens"
+  ],
+  "definitions": [
+    {
+      "term": "proposition",
+      "definition": "A statement that can be true or false."
+    },
+    {
+      "term": "logical connective",
+      "definition": "An operator such as 'and', 'or', 'not', 'implies', 'if and only if' that combines propositions."
+    },
+    {
+      "term": "tautology",
+      "definition": "A proposition that is true in every possible interpretation."
+    },
+    {
+      "term": "modus ponens",
+      "definition": "The inference rule: from P and P→Q, conclude Q."
+    },
+    {
+      "term": "modus tollens",
+      "definition": "The inference rule: from ¬Q and P→Q, conclude ¬P."
+    }
+  ],
+  "key_concepts": [
+    "proposition",
+    "truth value",
+    "conjunction",
+    "disjunction",
+    "negation",
+    "implication",
+    "biconditional",
+    "tautology",
+    "argument",
+    "inference rule"
+  ],
+  "algorithms": [],
+  "formulas": [
+    "P ∧ Q",
+    "P ∨ Q",
+    "¬P",
+    "P → Q",
+    "P ↔ Q"
+  ],
+  "examples": [
+    "\"I wear a blue shirt.\" is a proposition.",
+    "\"Is it raining?\" is not a proposition (it is a question).",
+    "If I get a passing grade in Logic, I will buy everyone beer. (conditional)"
+  ],
+  "exercises": [],
+  "prerequisites": [],
+  "learning_objectives": [
+    "Distinguish propositions from non-propositions.",
+    "Apply informal logical connectives: and, or, not, implies, iff.",
+    "Recognize tautologies and valid arguments.",
+    "Apply modus ponens and modus tollens."
+  ],
+  "lesson_id": "lesson-week-01-informal-logic",
+  "unit_id": "unit-propositional-logic"
+}

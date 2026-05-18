@@ -1,0 +1,79 @@
+{
+  "id": "notes6",
+  "title": "Resolution in Propositional Logic",
+  "source_file": "course/eng/notes6.pdf",
+  "week_number": 6,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Resolution Proof System",
+    "Clauses as Sets of Literals",
+    "CNF as Set of Clauses",
+    "Resolution Rule",
+    "Ground Resolution",
+    "Refutation Completeness"
+  ],
+  "subtopics": [
+    "Motivation: resolution vs natural deduction",
+    "Clause representation as sets",
+    "CNF representation as sets of sets",
+    "Resolution rule: from {L, …} and {¬L, …} derive their union minus L",
+    "Empty clause □ as witness of unsatisfiability",
+    "Resolution refutation algorithm",
+    "Soundness and completeness of ground resolution",
+    "Connection to DPLL and SAT solvers",
+    "Prolog as a resolution-based language"
+  ],
+  "definitions": [
+    {
+      "term": "resolution rule",
+      "definition": "From clauses C₁ = {L} ∪ R₁ and C₂ = {¬L} ∪ R₂, derive the resolvent R₁ ∪ R₂."
+    },
+    {
+      "term": "refutation",
+      "definition": "A resolution proof that derives the empty clause □, proving unsatisfiability."
+    },
+    {
+      "term": "ground resolution",
+      "definition": "Resolution applied to ground (variable-free) clauses in propositional logic."
+    }
+  ],
+  "key_concepts": [
+    "resolution rule",
+    "resolvent",
+    "refutation",
+    "unsatisfiability",
+    "CNF",
+    "clause as set of literals",
+    "completeness of resolution",
+    "SAT solving"
+  ],
+  "algorithms": [
+    "Resolution refutation: repeatedly apply resolution rule until □ or saturation"
+  ],
+  "formulas": [
+    "Res(C₁, C₂) = (C₁ \\ {L}) ∪ (C₂ \\ {¬L}) where L ∈ C₁ and ¬L ∈ C₂"
+  ],
+  "examples": [
+    "Resolution refutation of {p, ¬p} ⊢ □",
+    "Showing p → q, p ⊨ q by converting to CNF and applying resolution"
+  ],
+  "exercises": [
+    "Prove the associativity, commutativity, idempotency of ∨ and ∧.",
+    "Apply resolution to a given CNF formula to check satisfiability."
+  ],
+  "prerequisites": [
+    "notes5"
+  ],
+  "learning_objectives": [
+    "Understand the resolution proof system and its motivation.",
+    "Represent clauses and CNF as sets.",
+    "Apply the resolution rule.",
+    "Construct a resolution refutation to prove unsatisfiability."
+  ],
+  "lesson_id": "lesson-week-06-resolution",
+  "unit_id": "unit-propositional-logic"
+}

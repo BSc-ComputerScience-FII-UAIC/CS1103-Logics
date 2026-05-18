@@ -1,0 +1,85 @@
+{
+  "id": "notes2",
+  "title": "The Syntax of Propositional Logic",
+  "source_file": "course/eng/notes2.pdf",
+  "week_number": 2,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Formal Syntax of Propositional Logic",
+    "Alphabet of Propositional Logic",
+    "Propositional Variables",
+    "Logical Connectives",
+    "Propositional Formulae",
+    "Parse Trees / Abstract Syntax Trees",
+    "Subformulae",
+    "Size of a Formula"
+  ],
+  "subtopics": [
+    "Propositional alphabet: variables, connectives, auxiliary symbols",
+    "Inductive definition of PL formulae",
+    "Unique readability of formulae",
+    "Abstract syntax tree (AST)",
+    "Subformula relation",
+    "Size function on formulae"
+  ],
+  "definitions": [
+    {
+      "term": "propositional variable",
+      "definition": "An atomic symbol from the set A = {p, q, r, p', q₁, …} that can be assigned a truth value."
+    },
+    {
+      "term": "propositional formula",
+      "definition": "A formula built inductively from propositional variables using connectives ¬, ∧, ∨ (and → ↔)."
+    },
+    {
+      "term": "abstract syntax tree (AST)",
+      "definition": "A tree representation of a formula where internal nodes are connectives and leaves are propositional variables."
+    },
+    {
+      "term": "subformula",
+      "definition": "A formula φ is a subformula of ψ if φ appears as a subtree in the AST of ψ."
+    },
+    {
+      "term": "size",
+      "definition": "The size of a formula is the number of nodes in its AST."
+    }
+  ],
+  "key_concepts": [
+    "alphabet",
+    "propositional variable",
+    "logical connective",
+    "formula",
+    "abstract syntax tree",
+    "subformula",
+    "size",
+    "unique readability"
+  ],
+  "algorithms": [
+    "Inductive construction of propositional formulae",
+    "AST construction from a formula string"
+  ],
+  "formulas": [
+    "PL ::= A | ⊥ | ¬PL | (PL ∧ PL) | (PL ∨ PL) | (PL → PL) | (PL ↔ PL)"
+  ],
+  "examples": [
+    "(p ∧ q) is a valid formula",
+    "¬(p ∨ q) is a valid formula",
+    "pq is not a valid formula"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes1"
+  ],
+  "learning_objectives": [
+    "Define the alphabet of propositional logic.",
+    "Construct and recognise syntactically valid propositional formulae.",
+    "Build and read abstract syntax trees.",
+    "Define and compute subformulae and formula size."
+  ],
+  "lesson_id": "lesson-week-02-syntax-propositional-logic",
+  "unit_id": "unit-propositional-logic"
+}
