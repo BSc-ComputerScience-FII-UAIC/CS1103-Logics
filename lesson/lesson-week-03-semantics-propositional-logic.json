@@ -1,0 +1,34 @@
+{
+  "id": "lesson-week-03-semantics-propositional-logic",
+  "title": "The Semantics of Propositional Logic",
+  "week_number": 3,
+  "unit_id": "unit-propositional-logic",
+  "course_source_id": "notes3",
+  "duration_pages": 7,
+  "summary": "Introduces truth assignments, inductive truth value evaluation, satisfiability, validity, logical equivalence, and semantical consequence.",
+  "topics": [
+    "Truth assignments",
+    "Truth value evaluation",
+    "Satisfiability",
+    "Validity",
+    "Logical equivalence",
+    "Semantical consequence"
+  ],
+  "learning_outcomes": [
+    "Evaluate the truth value of a formula under a given assignment.",
+    "Classify formulae as satisfiable, valid, or unsatisfiable.",
+    "Check logical equivalence and semantical consequence."
+  ],
+  "key_terms": [
+    "truth assignment",
+    "satisfiability",
+    "validity",
+    "tautology",
+    "equivalence",
+    "semantical consequence"
+  ],
+  "prerequisite_lesson_ids": [
+    "lesson-week-02-syntax-propositional-logic"
+  ],
+  "next_lesson_id": "lesson-week-04-natural-deduction"
+}

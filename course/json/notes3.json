@@ -1,0 +1,86 @@
+{
+  "id": "notes3",
+  "title": "The Semantics of Propositional Logic",
+  "source_file": "course/eng/notes3.pdf",
+  "week_number": 3,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Truth Assignments",
+    "Truth Value of a Formula",
+    "Satisfiability",
+    "Validity (Tautology)",
+    "Equivalence",
+    "Semantical Consequence"
+  ],
+  "subtopics": [
+    "Truth assignment function τ: A → {0,1}",
+    "Inductive definition of truth value τ̂(φ)",
+    "Satisfiable vs unsatisfiable formulae",
+    "Valid formulae (tautologies)",
+    "Logical equivalence (φ ≡ ψ)",
+    "Semantical consequence (φ₁, …, φₙ ⊨ φ)"
+  ],
+  "definitions": [
+    {
+      "term": "truth assignment",
+      "definition": "A function τ: A → {0,1} that assigns a truth value to every propositional variable."
+    },
+    {
+      "term": "satisfiable formula",
+      "definition": "A formula φ is satisfiable if there exists a truth assignment τ such that τ̂(φ) = 1."
+    },
+    {
+      "term": "valid formula (tautology)",
+      "definition": "A formula φ is valid (a tautology) if τ̂(φ) = 1 for every truth assignment τ."
+    },
+    {
+      "term": "logical equivalence",
+      "definition": "Two formulae φ and ψ are equivalent (φ ≡ ψ) if they have the same truth value in every truth assignment."
+    },
+    {
+      "term": "semantical consequence",
+      "definition": "φ is a semantical consequence of φ₁, …, φₙ (written φ₁, …, φₙ ⊨ φ) if every truth assignment that satisfies all premises also satisfies φ."
+    }
+  ],
+  "key_concepts": [
+    "truth assignment",
+    "truth value",
+    "satisfiability",
+    "validity",
+    "tautology",
+    "logical equivalence",
+    "semantical consequence",
+    "truth table"
+  ],
+  "algorithms": [
+    "Inductive evaluation of truth value τ̂(φ)",
+    "Truth-table method for checking validity and satisfiability"
+  ],
+  "formulas": [
+    "τ̂(¬φ) = 1 − τ̂(φ)",
+    "τ̂(φ ∧ ψ) = min(τ̂(φ), τ̂(ψ))",
+    "τ̂(φ ∨ ψ) = max(τ̂(φ), τ̂(ψ))",
+    "τ̂(φ → ψ) = max(1 − τ̂(φ), τ̂(ψ))"
+  ],
+  "examples": [
+    "p ∧ ¬p is unsatisfiable",
+    "p ∨ ¬p is a tautology",
+    "p → q, p ⊨ q (modus ponens is semantically valid)"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes2"
+  ],
+  "learning_objectives": [
+    "Define and compute truth assignments and truth values.",
+    "Determine whether a formula is satisfiable, valid, or unsatisfiable.",
+    "Check logical equivalence of formulae.",
+    "Verify semantical consequence using truth tables."
+  ],
+  "lesson_id": "lesson-week-03-semantics-propositional-logic",
+  "unit_id": "unit-propositional-logic"
+}

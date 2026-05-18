@@ -1,0 +1,33 @@
+{
+  "id": "year-2018-2019",
+  "academic_year": "2018-2019",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "courses": [
+    {
+      "course_id": "cs1103-logics",
+      "course_name": "Logic for Computer Science",
+      "unit_ids": [
+        "unit-propositional-logic",
+        "unit-first-order-logic"
+      ],
+      "weekly_notes_ids": [
+        "notes1",
+        "notes2",
+        "notes3",
+        "notes4",
+        "notes5",
+        "notes6",
+        "notes7",
+        "notes9",
+        "notes10",
+        "notes11",
+        "notes12",
+        "notes13",
+        "notes14"
+      ]
+    }
+  ],
+  "total_lessons": 13,
+  "total_units": 2
+}

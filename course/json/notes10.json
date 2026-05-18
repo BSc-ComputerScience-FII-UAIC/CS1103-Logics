@@ -1,0 +1,88 @@
+{
+  "id": "notes10",
+  "title": "Semantics of First-Order Logic",
+  "source_file": "course/eng/notes10.pdf",
+  "week_number": 10,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Variables of a Formula (vars)",
+    "Assignments in FOL",
+    "Truth Value of a FOL Formula",
+    "Satisfiability in a Fixed Structure",
+    "Satisfiability",
+    "Validity",
+    "Equivalence",
+    "Semantical Consequence"
+  ],
+  "subtopics": [
+    "vars function on terms and formulae",
+    "free(φ) function",
+    "S-assignment α: X → D",
+    "Value of a term ᾱ(t) in a structure and assignment",
+    "Truth value S, α ⊨ φ (inductive definition)",
+    "Satisfiable in a structure S",
+    "Valid in a structure S",
+    "Satisfiable (across all structures)",
+    "Valid (across all structures)",
+    "Semantical consequence φ₁, …, φₙ ⊨ φ"
+  ],
+  "definitions": [
+    {
+      "term": "S-assignment",
+      "definition": "A function α: X → D mapping variables to domain elements of structure S."
+    },
+    {
+      "term": "value of a term",
+      "definition": "The element ᾱ(t) ∈ D computed inductively: ᾱ(x) = α(x), ᾱ(c) = cˢ, ᾱ(f(t₁,…,tₙ)) = fˢ(ᾱ(t₁),…,ᾱ(tₙ))."
+    },
+    {
+      "term": "truth value in FOL",
+      "definition": "S, α ⊨ φ defined inductively; for atomic P(t₁,…,tₙ): S, α ⊨ P(t₁,…,tₙ) iff Pˢ(ᾱ(t₁),…,ᾱ(tₙ)) = 1."
+    },
+    {
+      "term": "satisfiable formula in FOL",
+      "definition": "A formula φ is satisfiable if there exist a structure S and assignment α such that S, α ⊨ φ."
+    },
+    {
+      "term": "valid formula in FOL",
+      "definition": "A formula φ is valid if for every structure S and assignment α, S, α ⊨ φ."
+    }
+  ],
+  "key_concepts": [
+    "S-assignment",
+    "value of a term",
+    "truth value in FOL",
+    "satisfiability in FOL",
+    "validity in FOL",
+    "equivalence in FOL",
+    "semantical consequence in FOL"
+  ],
+  "algorithms": [
+    "Inductive evaluation of ᾱ(t)",
+    "Inductive definition of S, α ⊨ φ"
+  ],
+  "formulas": [
+    "S, α ⊨ ∀x.φ  iff  for all d ∈ D: S, α[x↦d] ⊨ φ",
+    "S, α ⊨ ∃x.φ  iff  there exists d ∈ D: S, α[x↦d] ⊨ φ"
+  ],
+  "examples": [
+    "Evaluating ∀x.(x + 0 = x) in the structure (ℤ, {=}, {+, −, 0})",
+    "Showing ∃x.P(x) is satisfiable but not valid"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes9"
+  ],
+  "learning_objectives": [
+    "Define and compute the value of a term in a structure and assignment.",
+    "Inductively evaluate the truth value of a FOL formula.",
+    "Determine satisfiability, validity, and equivalence of FOL formulae.",
+    "Apply semantical consequence in FOL."
+  ],
+  "lesson_id": "lesson-week-10-semantics-first-order-logic",
+  "unit_id": "unit-first-order-logic"
+}

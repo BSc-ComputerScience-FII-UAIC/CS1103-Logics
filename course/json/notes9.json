@@ -1,0 +1,109 @@
+{
+  "id": "notes9",
+  "title": "The Syntax of First-Order Logic",
+  "source_file": "course/eng/notes9.pdf",
+  "week_number": 9,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Motivation for First-Order Logic",
+    "Structures and Signatures",
+    "Alphabet of First-Order Logic",
+    "Terms",
+    "Atomic Formulae",
+    "First-Order Formulae",
+    "Free and Bound Variables",
+    "Scope of Quantifiers"
+  ],
+  "subtopics": [
+    "Limitations of propositional logic",
+    "Predicates and quantifiers (∀, ∃)",
+    "Signature: predicate symbols, function symbols, constant symbols",
+    "Mathematical structure (domain, interpretation of symbols)",
+    "FOL alphabet: variables, predicate symbols, function symbols, connectives, quantifiers",
+    "Inductive definition of terms",
+    "Inductive definition of FOL formulae",
+    "Bound and free occurrences of variables",
+    "Scope of a quantifier",
+    "Closed formulae (sentences)",
+    "Modelling English and arithmetic sentences in FOL"
+  ],
+  "definitions": [
+    {
+      "term": "signature",
+      "definition": "A pair (P, F) where P is a set of predicate symbols (each with an arity) and F is a set of function symbols (each with an arity)."
+    },
+    {
+      "term": "structure",
+      "definition": "A structure S for signature Σ = (P, F) consists of a non-empty domain D, an interpretation of each predicate symbol as a relation on D, and an interpretation of each function symbol as a function on D."
+    },
+    {
+      "term": "term",
+      "definition": "Inductively: a variable, a constant, or f(t₁, …, tₙ) where f is an n-ary function symbol and t₁, …, tₙ are terms."
+    },
+    {
+      "term": "atomic formula",
+      "definition": "A formula of the form P(t₁, …, tₙ) where P is an n-ary predicate symbol and t₁, …, tₙ are terms."
+    },
+    {
+      "term": "first-order formula",
+      "definition": "Inductively: an atomic formula, ⊥, ¬φ, φ ∧ ψ, φ ∨ ψ, φ → ψ, φ ↔ ψ, ∀x.φ, or ∃x.φ."
+    },
+    {
+      "term": "free variable",
+      "definition": "A variable x that occurs free (not bound by any quantifier) in a formula."
+    },
+    {
+      "term": "bound variable",
+      "definition": "A variable x that occurs within the scope of a quantifier ∀x or ∃x."
+    },
+    {
+      "term": "closed formula (sentence)",
+      "definition": "A formula with no free variables, i.e., free(φ) = ∅."
+    }
+  ],
+  "key_concepts": [
+    "predicate",
+    "quantifier",
+    "universal quantifier ∀",
+    "existential quantifier ∃",
+    "signature",
+    "structure",
+    "term",
+    "atomic formula",
+    "first-order formula",
+    "free variable",
+    "bound variable",
+    "scope",
+    "sentence"
+  ],
+  "algorithms": [
+    "Inductive definition of free(φ)",
+    "Parsing FOL formulae"
+  ],
+  "formulas": [
+    "∀x.(Human(x) → Mortal(x))",
+    "∃x.P(x)"
+  ],
+  "examples": [
+    "Modelling 'Any human is mortal' as ∀x.(Human(x) → Mortal(x))",
+    "Modelling 'Socrates is human' as Human(Socrates)",
+    "Arithmetic formulae such as ∀x.∃y.(x + y = 0)"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes1",
+    "notes2"
+  ],
+  "learning_objectives": [
+    "Explain the motivation for extending propositional logic to FOL.",
+    "Define signatures, structures, terms, and FOL formulae.",
+    "Identify free and bound variable occurrences.",
+    "Model natural language and arithmetic statements in FOL."
+  ],
+  "lesson_id": "lesson-week-09-syntax-first-order-logic",
+  "unit_id": "unit-first-order-logic"
+}

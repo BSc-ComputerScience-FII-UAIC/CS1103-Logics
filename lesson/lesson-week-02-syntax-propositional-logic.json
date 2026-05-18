@@ -1,0 +1,33 @@
+{
+  "id": "lesson-week-02-syntax-propositional-logic",
+  "title": "The Syntax of Propositional Logic",
+  "week_number": 2,
+  "unit_id": "unit-propositional-logic",
+  "course_source_id": "notes2",
+  "duration_pages": 11,
+  "summary": "Defines the formal alphabet and grammar of propositional logic, abstract syntax trees, subformula relation, and the size function on formulae.",
+  "topics": [
+    "Alphabet of propositional logic",
+    "Propositional formulae (inductive definition)",
+    "Abstract syntax trees",
+    "Subformulae",
+    "Size of a formula"
+  ],
+  "learning_outcomes": [
+    "Build syntactically valid propositional formulae.",
+    "Construct and read abstract syntax trees.",
+    "Compute subformulae and formula size."
+  ],
+  "key_terms": [
+    "alphabet",
+    "propositional variable",
+    "formula",
+    "AST",
+    "subformula",
+    "size"
+  ],
+  "prerequisite_lesson_ids": [
+    "lesson-week-01-informal-logic"
+  ],
+  "next_lesson_id": "lesson-week-03-semantics-propositional-logic"
+}

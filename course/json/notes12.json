@@ -1,0 +1,76 @@
+{
+  "id": "notes12",
+  "title": "Normal Forms for First-Order Logic — Prenex Normal Form",
+  "source_file": "course/eng/notes12.pdf",
+  "week_number": 12,
+  "course_name": "Logic for Computer Science",
+  "university": "Alexandru Ioan Cuza University, Iași",
+  "faculty": "Faculty of Computer Science",
+  "academic_year": "2018-2019",
+  "parsing_status": "ok",
+  "main_topics": [
+    "Equivalence of FOL Formulae",
+    "Equivalence in a Structure",
+    "Global Equivalence",
+    "Prenex Normal Form (PNF)",
+    "PNF Conversion Algorithm"
+  ],
+  "subtopics": [
+    "Definition of equivalence in structure S",
+    "Definition of global equivalence (valid biconditional)",
+    "Standard equivalences involving quantifiers",
+    "Renaming bound variables (α-renaming)",
+    "Prenex normal form: all quantifiers at the front",
+    "Algorithm for converting a FOL formula to PNF"
+  ],
+  "definitions": [
+    {
+      "term": "equivalent formulae in a structure S",
+      "definition": "φ₁ and φ₂ are equivalent in S (φ₁ ≡ˢ φ₂) if for every S-assignment α, S,α ⊨ φ₁ iff S,α ⊨ φ₂."
+    },
+    {
+      "term": "globally equivalent formulae",
+      "definition": "φ₁ and φ₂ are equivalent (φ₁ ≡ φ₂) if they are equivalent in every structure S."
+    },
+    {
+      "term": "prenex normal form (PNF)",
+      "definition": "A formula of the form Q₁x₁. Q₂x₂. … Qₙxₙ. ψ where each Qᵢ ∈ {∀, ∃} and ψ is quantifier-free."
+    }
+  ],
+  "key_concepts": [
+    "equivalence in FOL",
+    "prenex normal form",
+    "quantifier prefix",
+    "matrix (quantifier-free part)",
+    "α-renaming",
+    "PNF conversion"
+  ],
+  "algorithms": [
+    "PNF conversion: push quantifiers outward using equivalences, rename variables to avoid capture"
+  ],
+  "formulas": [
+    "¬∀x.φ ≡ ∃x.¬φ",
+    "¬∃x.φ ≡ ∀x.¬φ",
+    "∀x.φ ∧ ∀x.ψ ≡ ∀x.(φ ∧ ψ)",
+    "∃x.φ ∨ ∃x.ψ ≡ ∃x.(φ ∨ ψ)",
+    "(∀x.φ) ∧ ψ ≡ ∀x.(φ ∧ ψ)  when x ∉ free(ψ)"
+  ],
+  "examples": [
+    "∀x.P(x,x) ≡ ∀y.P(y,y) (α-renaming)",
+    "¬∀x.Q(x) ≡ ∃x.¬Q(x)",
+    "Converting ¬(∀x.P(x) → ∃y.Q(y)) to PNF"
+  ],
+  "exercises": [],
+  "prerequisites": [
+    "notes10",
+    "notes11"
+  ],
+  "learning_objectives": [
+    "Define equivalence of FOL formulae in a structure and globally.",
+    "Apply standard quantifier equivalences.",
+    "Rename bound variables to avoid capture (α-renaming).",
+    "Convert a FOL formula to prenex normal form."
+  ],
+  "lesson_id": "lesson-week-12-normal-forms-fol",
+  "unit_id": "unit-first-order-logic"
+}
